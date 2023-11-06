@@ -5,7 +5,7 @@ categories: [STYLE, CSS]
 tags: [css]     # TAG names should always be lowercase
 ---
 
-[The Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) is a well-known CSS issue that has had a number of remedies throughout time. If you're not aware of the background of the Holy Grail layout, this [A List Apart article](http://alistapart.com/article/holygrail/) provides a decent overview and links to some of the most well-known alternatives.
+[The Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) is a well-known CSS issue that has had a number of remedies throughout time. If you're not aware of the background of the Holy Grail layout, this [A List Apart article](https://www.digitalocean.com/community/tutorials/css-css-grid-holy-grail-layout) provides a decent overview and links to some of the most well-known alternatives.
 
 
 ![The Holy Grail Layout Gif Image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/921r9w1gpih1r2i7ru7q.gif)
