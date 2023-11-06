@@ -10,8 +10,6 @@ image:
 ---
 
 
-
-
 > I added the course road map.
 {: .prompt-info }
 
