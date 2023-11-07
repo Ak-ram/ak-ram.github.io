@@ -7,7 +7,6 @@ image:
   path: https://i.ibb.co/0Xp6m85/holy-Grail.png
   alt: '🎃 Holy Grail Flexbox Layout'
 ---
-
 [The Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) is a well-known CSS issue that has had a number of remedies throughout time. If you're not aware of the background of the Holy Grail layout, this [A List Apart article](https://www.digitalocean.com/community/tutorials/css-css-grid-holy-grail-layout) provides a decent overview and links to some of the most well-known alternatives.
 
 
