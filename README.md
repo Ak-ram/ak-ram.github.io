@@ -1,8 +1,6 @@
-Here is an example README file you can use for your blog built with the Chirpy Starter template:
+# My Portfolio
 
-# My Blog
-
-A personal blog built with Jekyll using the Chirpy theme.
+A personal website built with Jekyll using the Chirpy theme.
 
 ## Features
 
