@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Goals for 2023
+title: Goals For 2023
 permalink: /goals/
 icon: fa fa-trophy
-order: 5
+order: 7
 mermaid: true
 ---
 

@@ -3,6 +3,9 @@ title: '🎃 Holy Grail Flexbox Layout'
 date: 2022-10-23 00:00:00 +0000
 categories: [STYLE, CSS]
 tags: [css]     # TAG names should always be lowercase
+image:
+  path: '../../../assets/img/holyGrail.png'
+  alt: '🎃 Holy Grail Flexbox Layout'
 ---
 
 [The Holy Grail Layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) is a well-known CSS issue that has had a number of remedies throughout time. If you're not aware of the background of the Holy Grail layout, this [A List Apart article](https://www.digitalocean.com/community/tutorials/css-css-grid-holy-grail-layout) provides a decent overview and links to some of the most well-known alternatives.
