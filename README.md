@@ -1,55 +1,42 @@
-# Chirpy Starter
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+# My Portfolio
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+A personal website built with Jekyll using the Chirpy theme.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Features
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+- Blog posts in Markdown
+- Tags and categories for posts 
+- Archives for posts
+- About page
+- Contact page
+- Disqus comments
+- Google Analytics integration
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+## Getting Started
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+To run the blog locally:
 
-## Prerequisites
+1. Clone this repository
+2. Run `bundle install` to install dependencies
+3. Run `bundle exec jekyll serve` 
+4. View the blog at http://localhost:4000
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+## Customize
 
-## Installation
+You can customize the blog by editing files:
 
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
+- `_config.yml` - Site configuration like title, description, urls
+- `/_posts/` - Blog posts 
+- `/pages/` - Static pages 
+- `/_data/` - Data files like navigation
+- `/assets/` - Images, CSS stylesheets
 
-Then clone it to your local machine and run:
+## Deploy
 
-```console
-$ bundle
-```
-
-## Usage
-
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
+The blog can be deployed to GitHub Pages or any static host. Just run `jekyll build` and upload the contents of `_site/` folder.
 
 ## License
 
-This work is published under [MIT][mit] License.
+The content of this blog is licensed under [CC BY-NC-SA 4.0](LICENSE). The Chirpy theme by [Anthropic](https://www.anthropic.com) is licensed under [MIT](https://github.com/cotes2020/chirpy-theme/blob/master/LICENSE).
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Let me know if you have any other questions!
