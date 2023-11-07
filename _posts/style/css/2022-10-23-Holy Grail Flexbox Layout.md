@@ -4,7 +4,7 @@ date: 2022-10-23 00:00:00 +0000
 categories: [STYLE, CSS]
 tags: [css]     # TAG names should always be lowercase
 image:
-  path: './../../../assets/img/holyGrail.png'
+  path: https://i.ibb.co/0Xp6m85/holy-Grail.png
   alt: '🎃 Holy Grail Flexbox Layout'
 ---
 
