@@ -37,10 +37,8 @@ mermaid: true
 
 > ### 2.3. HTML, CSS, & JS Repos
 
-[![github-Portfolio-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=Portfolio&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=false&border_color=F8D866&icon_color=F8D866&show_icons=true)](https://github.com/Ak-ram/Portfolio)
+[![github-Portfolio-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=ak-ram.github.io&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=false&border_color=F8D866&icon_color=F8D866&show_icons=true)](https://github.com/Ak-ram/ak-ram.github.io)
 [![github-social-media-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=social-media&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/social-media)
-[![github-zoom-image-when-hovering-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=zoom-image-when-hovering&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/zoom-image-when-hovering)
-[![github-Arrow-Propagation-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=Arrow-Propagation&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/Arrow-Propagation)
 [![github-bookbia-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=bookbia&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/bookbia)
 [![github-Ctyptex-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=Ctyptex&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/Ctyptex)
 
