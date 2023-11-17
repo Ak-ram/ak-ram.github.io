@@ -2,7 +2,7 @@ name: Schedule and Deploy Posts
 
 on:
   schedule:
-    - cron: '0 */5 * * *'
+    - cron: '0/1 0 * * *'
 
 jobs:
   deploy:
@@ -19,6 +19,14 @@ jobs:
 
     - name: Install dependencies
       run: npm install  # Replace with your build script or command
+
+    - name: List posts in the directory
+      run: |
+        POSTS_DIR="path/to/posts"  # Replace with the actual path to your posts directory
+        for post in $POSTS_DIR/*; do
+          echo "Processing post: $post"
+          # Add your deployment logic for each post here
+        done
 
     - name: Commit and push changes
       run: |
