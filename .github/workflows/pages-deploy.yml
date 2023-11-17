@@ -1,40 +1,30 @@
-name: Schedule and Deploy Posts
+name: Move Post Every Minute
 
 on:
   schedule:
-    - cron: '0/1 0 * * *'
+    - cron: '* * * * *'
 
 jobs:
-  deploy:
+  move_post:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '14'
-
-    - name: Install dependencies
-      run: npm install  # Replace with your build script or command
-
-    - name: 2023-11-17-test.md
+    - name: Choose post to move
       run: |
-        POSTS_DIR="../scheduled_posts"  # Replace with the actual path to your posts directory
-        for post in $POSTS_DIR/*; do
-          echo "Processing post: $post"
-          # Add your deployment logic for each post here
-        done
+        POSTS_DIR="../scheduled_posts"
+        TARGET_DIR="../../_posts"  # Replace with the actual target directory path
+
+        # Choose the post with the earliest creation time
+        POST_TO_MOVE=$(ls -1t $POSTS_DIR | head -n 1)
+        mv "$POSTS_DIR/$POST_TO_MOVE" $TARGET_DIR
 
     - name: Commit and push changes
       run: |
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
         git add .
-        git commit -m "Scheduled post update"
+        git commit -m "Move post to target directory"
         git push
-
-    - name: Deploy
-      # Add deployment steps here, e.g., deploying to a hosting service or server
