@@ -11,11 +11,13 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        node-version: '16'  # Specify Node.js version 16
 
     - name: Choose post to move
       run: |
-        POSTS_DIR="../scheduled_posts"
-        TARGET_DIR="../../_posts"  # Replace with the actual target directory path
+        POSTS_DIR="../../scheduled_posts"  # Adjust the path if necessary
+        TARGET_DIR="../../_posts"  # Adjust the path if necessary
 
         # Choose the post with the earliest creation time
         POST_TO_MOVE=$(ls -1t $POSTS_DIR | head -n 1)
@@ -36,7 +38,8 @@ jobs:
       run: |
         git config user.name "${{ github.actor }}"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
-        git pull  # Ensure you have the latest changes
+        git fetch
+        git merge origin/main  # Adjust the branch name if necessary
         echo "Updated log at $(date)" >> moved_posts.log
         git add moved_posts.log
         git commit -m "Update moved_posts.log"
