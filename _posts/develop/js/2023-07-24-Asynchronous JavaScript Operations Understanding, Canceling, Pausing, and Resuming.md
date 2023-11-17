@@ -2,7 +2,10 @@
 title: 'Asynchronous JavaScript Operations: Understanding, Canceling, Pausing, and Resuming'
 date: 2023-07-24 00:00:00 +0000
 categories: [Develop, JavaScript]
-tags: [javascript]     # TAG names should always be lowercase
+tags: [javascript]     # TAG names should always be 
+image:
+  path: https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/24de8e4f-1e0c-4977-9d65-1f1662413154
+  alt: 'Asynchronous JavaScript Operations: Understanding, Canceling, Pausing, and Resuming'
 ---
 
 
