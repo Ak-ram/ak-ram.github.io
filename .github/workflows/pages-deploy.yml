@@ -22,7 +22,7 @@ jobs:
 
     - name: 2023-11-17-test.md
       run: |
-        POSTS_DIR="path/to/posts"  # Replace with the actual path to your posts directory
+        POSTS_DIR="../scheduled_posts"  # Replace with the actual path to your posts directory
         for post in $POSTS_DIR/*; do
           echo "Processing post: $post"
           # Add your deployment logic for each post here
