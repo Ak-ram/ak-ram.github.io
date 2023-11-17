@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: npm install  # Replace with your build script or command
 
-    - name: List posts in the directory
+    - name: 2023-11-17-test.md
       run: |
         POSTS_DIR="path/to/posts"  # Replace with the actual path to your posts directory
         for post in $POSTS_DIR/*; do
