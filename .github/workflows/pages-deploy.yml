@@ -16,8 +16,8 @@ jobs:
 
     - name: Choose post to move
       run: |
-        POSTS_DIR="../../scheduled_posts"  # Adjust the path if necessary
-        TARGET_DIR="../../_posts"  # Adjust the path if necessary
+        POSTS_DIR="scheduled_posts"  # Adjust the path if necessary
+        TARGET_DIR="_posts"  # Adjust the path if necessary
 
         # Choose the post with the earliest creation time
         POST_TO_MOVE=$(ls -1t $POSTS_DIR | head -n 1)
