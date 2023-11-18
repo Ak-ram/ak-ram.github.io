@@ -1,0 +1,45 @@
+---
+# the default layout is 'page'
+title: Notes
+icon: fas fa-info-circle
+order: 9
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Viewer</title>
+  <style>
+    .viewer-container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    #viewer {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <!-- Include PDFObject.js -->
+  <script src="../assets/pdfViewer/pdfobject.js"></script>
+</head>
+<body>
+
+  <!-- The element with ID 'viewer' will be the container for the embedded PDF -->
+  <div class="viewer-container">
+  <div id="viewer"></div>
+</div>
+  <script>
+    // Replace '../assets/one.pdf' with the actual path to your PDF file.
+    PDFObject.embed("../assets/pdfViewer/files/one.pdf", "#viewer");
+  </script>
+
+</body>
+</html>
