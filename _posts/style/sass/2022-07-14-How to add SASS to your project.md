@@ -4,7 +4,7 @@ date: 2022-07-14 00:00:00 +0000
 categories: [STYLE, SASS]
 tags: [sass]     # TAG names should always be lowercase
 image:
-  path: "https://dev.to/akram_ak/sass-the-style-you-want-the-code-you-need-5188"
+  path: "https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/efc380e3-8755-473d-b22c-4923ae6812f8"
   alt: '🤔 How to add SASS to your project ?'
 ---
 
