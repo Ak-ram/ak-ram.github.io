@@ -1,9 +1,15 @@
----
+[تصميم بدون عنوان.zip](https://github.com/Ak-ram/ak-ram.github.io/files/13404498/default.zip)---
 title: '📎 Sass: Placeholder Selector'
 date: 2022-10-09 00:00:00 +0000
 categories: [STYLE, SASS]
 tags: [sass]     # TAG names should always be lowercase
+image:
+  path: 'https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/56203bbb-4645-4e97-9689-ec83da7c6ef6'
+  alt: '📎 Sass: Placeholder Selector'
 ---
+
+
+
 
 Our series is split into two main categories: SASS rules and SASS at-rules, if you recall the course mindmap from the [sass syntax](https://dev.to/ak_ram/sass-syntax-34f1) post. The one SASS rule we didn't cover in the previous posts was **Placeholder Selector**, so now we're going to talk about it.
 
