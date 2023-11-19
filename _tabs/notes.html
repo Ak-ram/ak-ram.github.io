@@ -4,7 +4,6 @@ title: Notes
 icon: fas fa-info-circle
 order: 9
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +19,6 @@ order: 9
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            /* background-color: #f0f0f0; */
         }
 
         #pdfList {
@@ -28,8 +26,7 @@ order: 9
             padding: 0;
             text-align: center;
             display: flex;
-            gap: 2;
-
+            gap: 2px;
         }
 
         #pdfList li {
@@ -41,7 +38,7 @@ order: 9
             height: 80vh;
             display: flex;
             flex-direction: column;
-            gap:20px;
+            gap: 20px;
             align-items: center;
             justify-content: center;
             border: 1px solid #333;
@@ -49,35 +46,34 @@ order: 9
             font-size: 20px;
             font-weight: bold;
         }
-        
     </style>
     <!-- Include PDFObject.js -->
     <script src="../assets/pdfViewer/pdfobject.js"></script>
 </head>
 
 <body>
-
-
     <ul id="pdfList">
-        <!-- List of PDFs in the folder -->
-        <li><button onclick="viewPDF('files/one.pdf')">Data Structure</button></li>
-        <li><button onclick="viewPDF('files/two.pdf')">HTML</button></li>
-        <li><button onclick="viewPDF('files/two.pdf')">CSS</button></li>
-        <li><button onclick="viewPDF('files/two.pdf')">JS</button></li>
-        <li><button onclick="viewPDF('files/two.pdf')">SASS</button></li>
-        <li><button onclick="viewPDF('files/two.pdf')">Network</button></li>
+        <li><button onclick="viewPDF('html')">HTML</button></li>
+        <li><button onclick="viewPDF('js')">JS</button></li>
         <!-- Add more buttons for additional PDFs as needed -->
     </ul>
 
-    <!-- The element with ID 'viewer' will be the container for the embedded PDF -->
     <div class="viewer-container">
-        <div id="viewer"><i class="fas fa-file-pdf fa-3x pdf-icon"></i>  YOUR PDF FILE SHOULD GOES HERE</div>
+        <div id="viewer"><i class="fas fa-file-pdf fa-3x pdf-icon"></i> YOUR PDF FILE SHOULD GO HERE</div>
     </div>
 
     <script>
-        function viewPDF(pdfPath) {
-            // Replace '../assets/pdfViewer/' with the actual path to the folder containing PDFs
-            PDFObject.embed("../assets/pdfViewer/" + pdfPath, "#viewer");
+        const list = {
+            "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
+            "js": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link'
+        };
+
+        function viewPDF(pdfType) {
+            if (list[pdfType]) {
+                PDFObject.embed(list[pdfType], "#viewer");
+            } else {
+                console.error("Invalid pdfType.");
+            }
         }
     </script>
 </body>
