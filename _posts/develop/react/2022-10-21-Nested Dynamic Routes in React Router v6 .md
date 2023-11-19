@@ -4,7 +4,7 @@ date: 2022-10-21 00:00:00 +0000
 categories: [Develop, React]
 tags: [react]     # TAG names should always be lowercase
 image:
-  path: 'https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/473c0f36-073b-4889-a3dc-7b2a454f621f
+  path: 'https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/473c0f36-073b-4889-a3dc-7b2a454f621f'
   alt: '🎯 Nested Dynamic Routes in React Router v6'
 ---
 
