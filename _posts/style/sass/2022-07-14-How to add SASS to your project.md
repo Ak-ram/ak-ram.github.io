@@ -3,6 +3,9 @@ title: '🤔 How to add SASS to your project ?'
 date: 2022-07-14 00:00:00 +0000
 categories: [STYLE, SASS]
 tags: [sass]     # TAG names should always be lowercase
+image:
+  path: "https://dev.to/akram_ak/sass-the-style-you-want-the-code-you-need-5188"
+  alt: '🤔 How to add SASS to your project ?'
 ---
 
 #### I added the course road map.
