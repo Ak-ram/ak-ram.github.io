@@ -54,8 +54,11 @@ order: 9
 <body>
     <ul id="pdfList">
         <li><button onclick="viewPDF('html')">HTML</button></li>
-        <li><button onclick="viewPDF('js')">JS</button></li>
-        <!-- Add more buttons for additional PDFs as needed -->
+        <li><button onclick="viewPDF('js', 'Behind the scene')">JS - Behind the scene</button></li>
+        <li><button onclick="viewPDF('js', 'Generators')">JS - Generators</button></li>
+            <li><button onclick="viewPDF('js', 'Arrow Function')">JS - Arrow Function</button></li>
+            <li><button onclick="viewPDF('js', 'Iterability')">JS - Iterability</button></li>
+            <li><button onclick="viewPDF('js', 'Modularity')">JS - Modularity</button></li>
     </ul>
 
     <div class="viewer-container">
@@ -63,18 +66,43 @@ order: 9
     </div>
 
     <script>
-        const list = {
-            "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
-            "js": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link'
-        };
+        // const list = {
+        //     "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
+        //     "js": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link'
+        // };
 
-        function viewPDF(pdfType) {
-            if (list[pdfType]) {
-                PDFObject.embed(list[pdfType], "#viewer");
-            } else {
-                console.error("Invalid pdfType.");
-            }
+        // function viewPDF(pdfType) {
+        //     if (list[pdfType]) {
+        //         PDFObject.embed(list[pdfType], "#viewer");
+        //     } else {
+        //         console.error("Invalid pdfType.");
+        //     }
+        // }
+        const list = {
+        "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
+        "js": {
+            "Behind the scene": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link',
+            "Generators":"https://drive.google.com/file/d/1ABfH7EAA3tY-01pDf8mT2-gh4jRLuoaF/preview?usp=drive_link",
+            "Arrow Function":'https://drive.google.com/file/d/1VMcWUCL8581gorbE8Vz_f4KewIL10obu/preview?usp=drive_link',
+            "Iterability":"https://drive.google.com/file/d/1y-VhqgmpUzh8My2yU2Flau_rDtkhb5kz/preview?usp=drive_link",
+            "Modularity":'https://drive.google.com/file/d/1B3cvwZKa6qCgx2YHjeJRxaFxtRoWo0ux/preview?usp=drive_link'
+            // Add more subcategories for JS as needed
         }
+        // Add more categories as needed
+    };
+
+    function viewPDF(category, subcategory) {
+        if (list[category]) {
+            const pdfUrl = subcategory ? list[category][subcategory] : list[category];
+            if (pdfUrl) {
+                PDFObject.embed(pdfUrl, "#viewer");
+            } else {
+                console.error("Invalid subcategory.");
+            }
+        } else {
+            console.error("Invalid category.");
+        }
+    }
     </script>
 </body>
 
