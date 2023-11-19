@@ -1,4 +1,4 @@
-[تصميم بدون عنوان.zip](https://github.com/Ak-ram/ak-ram.github.io/files/13404498/default.zip)---
+---
 title: '📎 Sass: Placeholder Selector'
 date: 2022-10-09 00:00:00 +0000
 categories: [STYLE, SASS]
