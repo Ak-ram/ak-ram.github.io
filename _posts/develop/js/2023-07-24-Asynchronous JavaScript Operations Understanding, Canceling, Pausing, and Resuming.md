@@ -4,7 +4,7 @@ date: 2023-07-24 00:00:00 +0000
 categories: [Develop, JavaScript]
 tags: [javascript]     # TAG names should always be 
 image:
-  path: https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/24de8e4f-1e0c-4977-9d65-1f1662413154
+  path: https://github.com/Ak-ram/ak-ram.github.io/assets/69124951/9cbc8697-c881-42a1-934f-8c8a206ea11c
   alt: 'Asynchronous JavaScript Operations: Understanding, Canceling, Pausing, and Resuming'
 ---
 
