@@ -52,19 +52,19 @@ order: 9
             align-items: center;
             min-height: 100vh;
         }
-    
-        .file-system .folder:hover > button,
-        .file-system  .file:hover > button {
-            color: rgb(255, 255, 255);
+
+        .file-system .folder>button:hover,
+        .file-system .file>button:hover {
+            color: rgb(201, 159, 22);
             cursor: pointer;
             text-decoration: underline;
         }
-    
+
         button {
             all: unset;
             margin-left: 0.5rem;
         }
-    
+
         #viewer {
             width: 100%;
             height: 65vh;
@@ -79,7 +79,7 @@ order: 9
             font-weight: bold;
         }
     </style>
-    
+
     <!-- Include PDFObject.js -->
     <script src="../assets/pdfViewer/pdfobject.js"></script>
 </head>
@@ -87,9 +87,11 @@ order: 9
 <body>
     <div class="file-system">
         <ul id="pdfList" style="list-style: none;">
-            <li class="folder"><i class="fas fa-file-pdf"></i><button
-                    onclick="viewPDF('html')">HTML</button></li>
-            <li class="folder"><i class="fas fa-folder"></i> JS
+            <li class="folder"><i class="fas fa-file-pdf"></i><button onclick="viewPDF('data structures')">Data
+                    Structures</button></li>
+            <li class="folder"><i class="fas fa-file-pdf"></i><button onclick="viewPDF('html')">HTML</button></li>
+            <li class="folder"><span style="cursor: pointer;" onclick="toggleList(this)"><i class="fas fa-folder"></i>
+                    JS...</span>
                 <ol style="list-style: none;">
                     <li class="file"><i class="fas fa-file-pdf"></i><button
                             onclick="viewPDF('js', 'Behind the scene')">Behind the scene</button></li>
@@ -109,35 +111,97 @@ order: 9
     <div class="viewer-container">
         <div id="viewer"><i class="fas fa-file-pdf fa-3x pdf-icon"></i> YOUR PDF FILE SHOULD GO HERE</div>
     </div>
-
     <script>
-    
         const list = {
-        "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
-        "js": {
-            "Behind the scene": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link',
-            "Generators":"https://drive.google.com/file/d/1ABfH7EAA3tY-01pDf8mT2-gh4jRLuoaF/preview?usp=drive_link",
-            "Arrow Function":'https://drive.google.com/file/d/1VMcWUCL8581gorbE8Vz_f4KewIL10obu/preview?usp=drive_link',
-            "Iterability":"https://drive.google.com/file/d/1y-VhqgmpUzh8My2yU2Flau_rDtkhb5kz/preview?usp=drive_link",
-            "Modularity":'https://drive.google.com/file/d/1B3cvwZKa6qCgx2YHjeJRxaFxtRoWo0ux/preview?usp=drive_link'
-            // Add more subcategories for JS as needed
-        }
-        // Add more categories as needed
-    };
+            "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
+            "js": {
+                "Behind the scene": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link',
+                "Generators": "https://drive.google.com/file/d/1ABfH7EAA3tY-01pDf8mT2-gh4jRLuoaF/preview?usp=drive_link",
+                "Arrow Function": 'https://drive.google.com/file/d/1VMcWUCL8581gorbE8Vz_f4tRoWo0ux/preview?usp=drive_link',
+                "Iterability": "https://drive.google.com/file/d/1y-VhqgmpUzh8My2yU2Flau_rDtkhb5kz/preview?usp=drive_link",
+                "Modularity": 'https://drive.google.com/file/d/1B3cvwZKa6qCgx2YHjeJRxaFxtRoWo0ux/preview?usp=drive_link'
+                // Add more subcategories for JS as needed
+            },
+            "data structures": ""
+            // Add more categories as needed
+        };
 
-    function viewPDF(category, subcategory) {
-        if (list[category]) {
-            const pdfUrl = subcategory ? list[category][subcategory] : list[category];
-            if (pdfUrl) {
-                PDFObject.embed(pdfUrl, "#viewer");
+        function viewPDF(category, subcategory) {
+            if (list[category]) {
+                const pdfUrl = subcategory ? list[category][subcategory] : list[category];
+                if (pdfUrl) {
+                    PDFObject.embed(pdfUrl, "#viewer");
+
+                    // Change the color of the clicked button text to yellow
+                    const buttons = document.querySelectorAll('.file-system button');
+                    buttons.forEach(button => {
+                        if (button.innerText === category || button.innerText === subcategory) {
+                            button.style.color = 'rgb(201, 159, 22)';
+                        } else {
+                            button.style.color = ''; // Reset other buttons' color
+                        }
+                    });
+                } else {
+                    console.error("Invalid subcategory.");
+                }
             } else {
-                console.error("Invalid subcategory.");
+                console.error("Invalid category.");
             }
-        } else {
-            console.error("Invalid category.");
         }
-    }
+
+        let temp = true;
+        function toggleList(ele) {
+            if (temp === true) {
+                ele.nextElementSibling.style.display = 'none';
+                temp = false;
+            } else {
+                ele.nextElementSibling.style.display = 'block';
+                temp = true;
+            }
+        }
     </script>
+
+    <!-- <script>
+
+        const list = {
+            "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
+            "js": {
+                "Behind the scene": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link',
+                "Generators": "https://drive.google.com/file/d/1ABfH7EAA3tY-01pDf8mT2-gh4jRLuoaF/preview?usp=drive_link",
+                "Arrow Function": 'https://drive.google.com/file/d/1VMcWUCL8581gorbE8Vz_f4KewIL10obu/preview?usp=drive_link',
+                "Iterability": "https://drive.google.com/file/d/1y-VhqgmpUzh8My2yU2Flau_rDtkhb5kz/preview?usp=drive_link",
+                "Modularity": 'https://drive.google.com/file/d/1B3cvwZKa6qCgx2YHjeJRxaFxtRoWo0ux/preview?usp=drive_link'
+                // Add more subcategories for JS as needed
+            },
+            "data structures": ""
+            // Add more categories as needed
+        };
+
+        function viewPDF(category, subcategory) {
+            if (list[category]) {
+                const pdfUrl = subcategory ? list[category][subcategory] : list[category];
+                if (pdfUrl) {
+                    PDFObject.embed(pdfUrl, "#viewer");
+                } else {
+                    console.error("Invalid subcategory.");
+                }
+            } else {
+                console.error("Invalid category.");
+            }
+        }
+        let temp = true;
+        function toggleList(ele) {
+            if (temp === true) {
+                ele.nextElementSibling.style.display = 'none';
+                temp = false
+            } else {
+                ele.nextElementSibling.style.display = 'block';
+                temp = true
+
+            }
+
+        }
+    </script> -->
 </body>
 
 </html>
