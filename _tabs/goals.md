@@ -6,7 +6,6 @@ icon: fa fa-trophy
 order: 7
 mermaid: true
 ---
-# Goals for 2023
 ### 1. Technologies
 - [x] TypeScript
 - [x] React
