@@ -49,7 +49,8 @@ order: 9
       }
     </style>
 
-
+    <!-- Include PDFObject.js -->
+    <script src="../assets/pdfViewer/pdfobject.js"></script>
   </head>
 
   <body>
@@ -58,6 +59,10 @@ order: 9
         <li class="folder">
           <i class="fas fa-file-pdf"></i
           ><button onclick="viewPDF('data structures')">Data Structures</button>
+        </li>
+         <li class="folder">
+          <i class="fas fa-file-pdf"></i
+          ><button onclick="viewPDF('ts')">TypeScript</button>
         </li>
         <li class="folder">
           <i class="fas fa-file-pdf"></i
@@ -109,6 +114,7 @@ order: 9
     <script>
       const list = {
         html: "https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing",
+        ts:"https://drive.google.com/file/d/1-7PX2SumD0-9CzejZ7dxhkAkb1GcZmpA/preview?usp=sharing",
         js: {
           "Behind the scene":
             "https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link",
@@ -166,7 +172,47 @@ order: 9
         }
       }
     </script>
-        <!-- Include PDFObject.js -->
-    <script src="../assets/pdfViewer/pdfobject.js"></script>
+
+    <!-- <script>
+
+        const list = {
+            "html": 'https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing',
+            "js": {
+                "Behind the scene": 'https://drive.google.com/file/d/1VTU3vq0iTP8Av2ZOKLrLj4862Zv7LUQl/preview?usp=drive_link',
+                "Generators": "https://drive.google.com/file/d/1ABfH7EAA3tY-01pDf8mT2-gh4jRLuoaF/preview?usp=drive_link",
+                "Arrow Function": 'https://drive.google.com/file/d/1VMcWUCL8581gorbE8Vz_f4KewIL10obu/preview?usp=drive_link',
+                "Iterability": "https://drive.google.com/file/d/1y-VhqgmpUzh8My2yU2Flau_rDtkhb5kz/preview?usp=drive_link",
+                "Modularity": 'https://drive.google.com/file/d/1B3cvwZKa6qCgx2YHjeJRxaFxtRoWo0ux/preview?usp=drive_link'
+                // Add more subcategories for JS as needed
+            },
+            "data structures": ""
+            // Add more categories as needed
+        };
+
+        function viewPDF(category, subcategory) {
+            if (list[category]) {
+                const pdfUrl = subcategory ? list[category][subcategory] : list[category];
+                if (pdfUrl) {
+                    PDFObject.embed(pdfUrl, "#viewer");
+                } else {
+                    console.error("Invalid subcategory.");
+                }
+            } else {
+                console.error("Invalid category.");
+            }
+        }
+        let temp = true;
+        function toggleList(ele) {
+            if (temp === true) {
+                ele.nextElementSibling.style.display = 'none';
+                temp = false
+            } else {
+                ele.nextElementSibling.style.display = 'block';
+                temp = true
+
+            }
+
+        }
+    </script> -->
   </body>
 </html>
