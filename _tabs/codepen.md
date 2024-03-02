@@ -7,10 +7,100 @@ order: 6
 mermaid: true
 ---
 
-[![Data Caching With JS](https://github.com/Ak-ram/Ak-ram/assets/69124951/fa88bacc-a220-44ce-9d56-35eeb41170fd)](https://codepen.io/Akr-am/pen/WNLRoYY?editors=1010)
-[![QR-Code Generator](https://github.com/Ak-ram/Ak-ram/assets/69124951/414166a1-8ac5-4f7e-bed0-9a2aa352c006)](https://codepen.io/Akr-am/pen/ExrNpvG)
-[![Gradient Colors JS Generator](https://github.com/Ak-ram/Ak-ram/assets/69124951/5d0f521a-f733-45bd-86bf-df119414386f)](https://codepen.io/Akr-am/pen/rNPWBRd)
-[![CSS Split Image Animation](https://github.com/Ak-ram/Ak-ram/assets/69124951/d576e888-31e9-40b5-9138-b8479a835eb1)](https://codepen.io/Akr-am/pen/wvXQeqd)
-[![Encrypt and Decrypt data using js](https://github.com/Ak-ram/Ak-ram/assets/69124951/9e34cf33-f230-43ff-be03-6e84d37e5b42)](https://codepen.io/Akr-am/pen/VwqKZzy?editors=0011)
-[![Drag & Drop image uploader](https://github.com/Ak-ram/Ak-ram/assets/69124951/ecd9604c-2932-43e5-821e-b77d1c07b10b)](https://codepen.io/Akr-am/pen/WNPxaxx)
-[![CSS Shadow Animation](https://github.com/Ak-ram/Ak-ram/assets/69124951/5feee168-964c-4a25-998a-ae4e71a782b9)](https://codepen.io/Akr-am/full/JjvedzJ)
+<style>
+    .code-pens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 1200px; /* Adjust max-width as needed */
+        padding: 20px;
+    }
+
+    .code-pen {
+            width: calc(50% - 20px);
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #24292f;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .code-pen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .code-pen a {
+        border: none !important;
+        margin: 0 !important;
+            border-radius: 5px !important;
+    overflow: hidden !important;
+    }
+
+    .code-pen-header {
+        color: white; /* Header text color */
+        padding: 10px;
+            border-bottom: 1px solid #24292f;
+    }
+
+    @media screen and (max-width: 768px) {
+        .code-pen {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .code-pen {
+            width: calc(100% - 20px);
+        }
+    }
+</style>
+
+<div class="code-pens">
+    <div class="code-pen">
+        <div class="code-pen-header">Data Caching With JS</div>
+        <a href="https://codepen.io/Akr-am/pen/WNLRoYY?editors=1010">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/fa88bacc-a220-44ce-9d56-35eeb41170fd" alt="Data Caching With JS">
+        </a>
+    </div>
+    <div class="code-pen">
+        <div class="code-pen-header">QR-Code Generator</div>
+        <a href="https://codepen.io/Akr-am/pen/ExrNpvG">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/414166a1-8ac5-4f7e-bed0-9a2aa352c006" alt="QR-Code Generator">
+        </a>
+    </div>
+    <div class="code-pen">
+        <div class="code-pen-header">Gradient Colors JS Generator</div>
+        <a href="https://codepen.io/Akr-am/pen/rNPWBRd">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/5d0f521a-f733-45bd-86bf-df119414386f" alt="Gradient Colors JS Generator">
+        </a>
+    </div>
+    <div class="code-pen">
+        <div class="code-pen-header">CSS Split Image Animation</div>
+        <a href="https://codepen.io/Akr-am/pen/wvXQeqd">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/d576e888-31e9-40b5-9138-b8479a835eb1" alt="CSS Split Image Animation">
+        </a>
+    </div>
+    <div class="code-pen">
+        <div class="code-pen-header">Encrypt and Decrypt data using js</div>
+        <a href="https://codepen.io/Akr-am/pen/VwqKZzy?editors=0011">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/9e34cf33-f230-43ff-be03-6e84d37e5b42" alt="Encrypt and Decrypt data using js">
+        </a>
+    </div>
+    <div class="code-pen">
+        <div class="code-pen-header">Drag & Drop image uploader</div>
+        <a href="https://codepen.io/Akr-am/pen/WNPxaxx">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/ecd9604c-2932-43e5-821e-b77d1c07b10b" alt="Drag & Drop image uploader">
+        </a>
+    </div>
+    <div class="code-pen">
+        <div class="code-pen-header">CSS Shadow Animation</div>
+        <a href="https://codepen.io/Akr-am/full/JjvedzJ">
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/5feee168-964c-4a25-998a-ae4e71a782b9" alt="CSS Shadow Animation">
+        </a>
+    </div>
+</div>
