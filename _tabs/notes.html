@@ -51,66 +51,6 @@ order: 9
 
     <!-- Include PDFObject.js -->
     <script src="../assets/pdfViewer/pdfobject.js"></script>
-  </head>
-
-  <body>
-    <div class="file-system">
-      <ul id="pdfList" style="list-style: none;">
-        <li class="folder">
-          <i class="fas fa-file-pdf"></i
-          ><button onclick="viewPDF('data structures')">Data Structures</button>
-        </li>
-         <li class="folder">
-          <i class="fas fa-file-pdf"></i
-          ><button onclick="viewPDF('ts')">TypeScript</button>
-        </li>
-        <li class="folder">
-          <i class="fas fa-file-pdf"></i
-          ><button onclick="viewPDF('html')">HTML</button>
-        </li>
-        <li class="folder">
-          <span style="cursor: pointer;" onclick="toggleList(this)"
-            ><i class="fas fa-folder"></i> JS...</span
-          >
-          <ol style="list-style: none;">
-            <li class="file">
-              <i class="fas fa-file-pdf"></i
-              ><button onclick="viewPDF('js', 'Behind the scene')">
-                Behind the scene
-              </button>
-            </li>
-            <li class="file">
-              <i class="fas fa-file-pdf"></i
-              ><button onclick="viewPDF('js', 'Generators')">Generators</button>
-            </li>
-            <li class="file">
-              <i class="fas fa-file-pdf"></i
-              ><button onclick="viewPDF('js', 'Arrow Function')">
-                Arrow Function
-              </button>
-            </li>
-            <li class="file">
-              <i class="fas fa-file-pdf"></i
-              ><button onclick="viewPDF('js', 'Iterability')">
-                Iterability
-              </button>
-            </li>
-            <li class="file">
-              <i class="fas fa-file-pdf"></i
-              ><button onclick="viewPDF('js', 'Modularity')">Modularity</button>
-            </li>
-           
-          </ol>
-        </li>
-      </ul>
-    </div>
-
-    <div class="viewer-container">
-      <div id="viewer">
-        <i class="fas fa-file-pdf fa-3x pdf-icon"></i> YOUR PDF FILE SHOULD GO
-        HERE
-      </div>
-    </div>
     <script>
       const list = {
         html: "https://drive.google.com/file/d/1ejEI1ONXmfMJ32ZkfHdAEEmt34Co8618/preview?usp=sharing",
@@ -173,6 +113,67 @@ order: 9
       }
     </script>
 
+  </head>
+
+  <body>
+    <div class="file-system">
+      <ul id="pdfList" style="list-style: none;">
+        <li class="folder">
+          <i class="fas fa-file-pdf"></i
+          ><button onclick="viewPDF('data structures')">Data Structures</button>
+        </li>
+         <li class="folder">
+          <i class="fas fa-file-pdf"></i
+          ><button onclick="viewPDF('ts')">TypeScript</button>
+        </li>
+        <li class="folder">
+          <i class="fas fa-file-pdf"></i
+          ><button onclick="viewPDF('html')">HTML</button>
+        </li>
+        <li class="folder">
+          <span style="cursor: pointer;" onclick="toggleList(this)"
+            ><i class="fas fa-folder"></i> JS...</span
+          >
+          <ol style="list-style: none;">
+            <li class="file">
+              <i class="fas fa-file-pdf"></i
+              ><button onclick="viewPDF('js', 'Behind the scene')">
+                Behind the scene
+              </button>
+            </li>
+            <li class="file">
+              <i class="fas fa-file-pdf"></i
+              ><button onclick="viewPDF('js', 'Generators')">Generators</button>
+            </li>
+            <li class="file">
+              <i class="fas fa-file-pdf"></i
+              ><button onclick="viewPDF('js', 'Arrow Function')">
+                Arrow Function
+              </button>
+            </li>
+            <li class="file">
+              <i class="fas fa-file-pdf"></i
+              ><button onclick="viewPDF('js', 'Iterability')">
+                Iterability
+              </button>
+            </li>
+            <li class="file">
+              <i class="fas fa-file-pdf"></i
+              ><button onclick="viewPDF('js', 'Modularity')">Modularity</button>
+            </li>
+           
+          </ol>
+        </li>
+      </ul>
+    </div>
+
+    <div class="viewer-container">
+      <div id="viewer">
+        <i class="fas fa-file-pdf fa-3x pdf-icon"></i> YOUR PDF FILE SHOULD GO
+        HERE
+      </div>
+    </div>
+  
     <!-- <script>
 
         const list = {
