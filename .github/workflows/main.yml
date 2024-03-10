@@ -1,0 +1,35 @@
+name: Generate Documentation
+
+on:
+  push:
+    paths:
+      - '**.md' # Trigger workflow on changes to markdown files
+      - '**.yml' # Include YAML files if needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+
+      - name: Install Dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build Documentation
+        run: |
+          bundle exec jekyll build --destination docs
+
+      - name: Deploy Documentation
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
