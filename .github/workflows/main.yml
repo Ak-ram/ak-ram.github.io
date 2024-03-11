@@ -13,11 +13,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-
+    
       - name: Set Up Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3' # Use 2.7.x or another available version
+          ruby-version: '3.3' # Use 3.3 or another available version
 
       - name: Install Dependencies
         run: |
