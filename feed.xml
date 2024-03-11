@@ -1,0 +1,234 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://ak-ram.github.io/</id>
+  <title>Akram Ashraf</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2024-03-11T09:42:28+00:00</updated>
+  <author>
+    <name>Akram Ashraf</name>
+    <uri>https://ak-ram.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://ak-ram.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://ak-ram.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 Akram Ashraf </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Asynchronous JavaScript Operations: Understanding, Canceling, Pausing, and Resuming</title>
+    <link href="https://ak-ram.github.io/posts/Asynchronous-JavaScript-Operations-Understanding,-Canceling,-Pausing,-and-Resuming/" rel="alternate" type="text/html" title="Asynchronous JavaScript Operations: Understanding, Canceling, Pausing, and Resuming" />
+    <published>2023-07-24T00:00:00+00:00</published>
+  
+    <updated>2023-07-24T00:00:00+00:00</updated>
+  
+    <id>https://ak-ram.github.io/posts/Asynchronous-JavaScript-Operations-Understanding,-Canceling,-Pausing,-and-Resuming/</id>
+    <content src="https://ak-ram.github.io/posts/Asynchronous-JavaScript-Operations-Understanding,-Canceling,-Pausing,-and-Resuming/" />
+    <author>
+      <name>Akram Ashraf</name>
+    </author>
+
+  
+    
+    <category term="Develop" />
+    
+    <category term="JavaScript" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+Asynchronous JavaScript operations have become a fundamental concept in modern web development. They allow us to execute tasks without blocking the main thread, resulting in a more responsive and efficient user experience. In this article, we will explore what asynchronous operations are in JavaScript, how to cancel them, and how to pause and resume them. We will also provide real-...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>🎃 Holy Grail Flexbox Layout</title>
+    <link href="https://ak-ram.github.io/posts/Holy-Grail-Flexbox-Layout/" rel="alternate" type="text/html" title="🎃 Holy Grail Flexbox Layout" />
+    <published>2022-10-23T00:00:00+00:00</published>
+  
+    <updated>2022-10-23T00:00:00+00:00</updated>
+  
+    <id>https://ak-ram.github.io/posts/Holy-Grail-Flexbox-Layout/</id>
+    <content src="https://ak-ram.github.io/posts/Holy-Grail-Flexbox-Layout/" />
+    <author>
+      <name>Akram Ashraf</name>
+    </author>
+
+  
+    
+    <category term="STYLE" />
+    
+    <category term="CSS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The Holy Grail Layout is a well-known CSS issue that has had a number of remedies throughout time. If you’re not aware of the background of the Holy Grail layout, this A List Apart article provides a decent overview and links to some of the most well-known alternatives.
+
+
+
+Exactly like in the image above, a page with a header, footer, and three columns makes up the Holy Grail Layout’s basic str...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>🌟 CSS Shadow Animation</title>
+    <link href="https://ak-ram.github.io/posts/CSS-Shadow-Animation/" rel="alternate" type="text/html" title="🌟 CSS Shadow Animation" />
+    <published>2022-10-23T00:00:00+00:00</published>
+  
+    <updated>2022-10-23T00:00:00+00:00</updated>
+  
+    <id>https://ak-ram.github.io/posts/CSS-Shadow-Animation/</id>
+    <content src="https://ak-ram.github.io/posts/CSS-Shadow-Animation/" />
+    <author>
+      <name>Akram Ashraf</name>
+    </author>
+
+  
+    
+    <category term="STYLE" />
+    
+    <category term="CSS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+You can access the code from here
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>🎯 Nested Dynamic Routes in React Router v6</title>
+    <link href="https://ak-ram.github.io/posts/Nested-Dynamic-Routes-in-React-Router-v6/" rel="alternate" type="text/html" title="🎯 Nested Dynamic Routes in React Router v6" />
+    <published>2022-10-21T00:00:00+00:00</published>
+  
+    <updated>2022-10-21T00:00:00+00:00</updated>
+  
+    <id>https://ak-ram.github.io/posts/Nested-Dynamic-Routes-in-React-Router-v6/</id>
+    <content src="https://ak-ram.github.io/posts/Nested-Dynamic-Routes-in-React-Router-v6/" />
+    <author>
+      <name>Akram Ashraf</name>
+    </author>
+
+  
+    
+    <category term="Develop" />
+    
+    <category term="React" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      When I first started to develop my portfolio, I fetched GitHub Repos and ran into the issue of needing to present the repo data when clicking on the repo name precisely as seen in the image below.
+
+
+
+If you look closely, you’ll see that the URL is dynamically altered to reflect the chosen repository’s name and the proper repo data is rendered. The term “dynamic routing” refers to this behavior....
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>📚 Sass: More about Nesting</title>
+    <link href="https://ak-ram.github.io/posts/Sass-More-about-Nesting/" rel="alternate" type="text/html" title="📚 Sass: More about Nesting" />
+    <published>2022-10-09T00:00:00+00:00</published>
+  
+    <updated>2022-10-09T00:00:00+00:00</updated>
+  
+    <id>https://ak-ram.github.io/posts/Sass-More-about-Nesting/</id>
+    <content src="https://ak-ram.github.io/posts/Sass-More-about-Nesting/" />
+    <author>
+      <name>Akram Ashraf</name>
+    </author>
+
+  
+    
+    <category term="STYLE" />
+    
+    <category term="SASS" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      We learnt how to nest Scss rules in the last post. Today, we’ll go into more depth regarding nesting.
+
+In this post, we will cover:-
+
+
+  Parent Selector and pseudo-classes
+  Grouping and Nesting CSS Selectors
+  Selector Nest Combinators
+
+
+Each point will be discussed in depth.
+
+
+
+1. Parent Selector and pseudo-classes
+
+Official SASS document states that
+
+
+  The parent selector, &amp;amp; , is a spec...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

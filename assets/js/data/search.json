@@ -1,0 +1,191 @@
+[
+  
+  {
+    "title": "Asynchronous JavaScript Operations: Understanding, Canceling, Pausing, and Resuming",
+    "url": "/posts/Asynchronous-JavaScript-Operations-Understanding,-Canceling,-Pausing,-and-Resuming/",
+    "categories": "Develop, JavaScript",
+    "tags": "javascript",
+    "date": "2023-07-24 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "IntroductionAsynchronous JavaScript operations have become a fundamental concept in modern web development. They allow us to execute tasks without blocking the main thread, resulting in a more resp...",
+    "content": "IntroductionAsynchronous JavaScript operations have become a fundamental concept in modern web development. They allow us to execute tasks without blocking the main thread, resulting in a more responsive and efficient user experience. In this article, we will explore what asynchronous operations are in JavaScript, how to cancel them, and how to pause and resume them. We will also provide real-life examples to help you understand the practical implementation of these concepts.1. What is an Asynchronous Operation in JavaScript?In JavaScript, an asynchronous operation is a task that is executed separately from the main execution thread. It allows the program to continue running while the task is being processed, instead of waiting for it to complete. This is particularly useful for time-consuming operations, such as fetching data from an API or performing complex calculations, as it prevents the user interface from freezing and ensures a smooth user experience.JavaScript provides several mechanisms for handling asynchronous operations, including callbacks, promises, and async/await. These mechanisms allow developers to write code that can be executed asynchronously, making it easier to manage complex workflows and improve overall performance.2. How to Cancel an Asynchronous OperationIn some cases, you may need to cancel an ongoing asynchronous operation, especially if the user initiates another action or if the operation becomes unnecessary. While cancellation depends on the specific implementation of the asynchronous operation, there are a few common approaches:2.1 Using PromisesIf you are using promises to handle asynchronous operations, you can cancel the operation by using a cancellation token. A cancellation token is a mechanism that allows you to notify the ongoing operation that it should be canceled. Here’s an example:const promise = new Promise((resolve, reject, onCancel) =&gt; {  const timeoutId = setTimeout(() =&gt; {    resolve('Operation completed successfully.');  }, 5000);    onCancel(() =&gt; {    clearTimeout(timeoutId);    reject(new Error('Operation canceled.'));  });});// To cancel the operation:promise.cancel();In the above example, we create a promise that resolves after a timeout of 5 seconds. We use the onCancel function to handle cancellation. When the cancel method is called on the promise, it will execute the cancellation logic, rejecting the promise with an error message.2.2 Using Event EmittersAnother approach to canceling an asynchronous operation is by using event emitters. Event emitters allow you to emit events and listen for them in different parts of your code. You can emit a cancellation event and handle it appropriately to cancel the ongoing operation. Here’s an example:const EventEmitter = require('events');class MyEmitter extends EventEmitter {}const emitter = new MyEmitter();emitter.on('cancel', () =&gt; {  // Cancel the ongoing operation});// To cancel the operation:emitter.emit('cancel');In this example, we create an event emitter and listen for the ‘cancel’ event. When the event is emitted, we can handle it by canceling the ongoing operation.3. How to Pause and Resume an Asynchronous OperationSometimes you may need to pause an ongoing asynchronous operation temporarily and resume it later. This can be useful when you want to prioritize other tasks or when you need to wait for user input. While pausing and resuming asynchronous operations may not be a built-in feature, you can achieve it with some additional coding.3.1 Using GeneratorsGenerators in JavaScript provide a powerful mechanism for implementing pausable and resumable operations. By using the yield keyword, you can pause the execution of a generator function and later resume it. Here’s an example:function* pausableOperation() {  console.log('Start');  yield;  console.log('Resume');}const generator = pausableOperation();// To pause the operation:generator.next();// To resume the operation:generator.next();In this example, we define a generator function called pausableOperation. When the function is called, it logs ‘Start’ and then yields. By calling generator.next(), we can pause and resume the operation. The first call to generator.next() logs ‘Start’, and the second call logs ‘Resume’.3.2 Using Promises and Async/AwaitIf you are using promises or the async/await syntax, you can achieve pausing and resuming by combining them with a loop. Here’s an example:function delay(ms) {  return new Promise((resolve) =&gt; setTimeout(resolve, ms));}async function pausableOperation() {  console.log('Start');  await delay(2000);  console.log('Resume');}let paused = false;async function runOperation() {  while (true) {    if (!paused) {      await pausableOperation();    } else {      await delay(1000);    }  }}// Topause the operation:paused = true;// To resume the operation:paused = false;In this example, we define a pausableOperation function that logs ‘Start’ and waits for 2 seconds using the delay function. We also define a runOperation function that runs the pausableOperation in a loop. By setting the paused variable to true or false, we can pause and resume the operation accordingly.ConclusionUnderstanding how to handle asynchronous operations is crucial in modern web development. Being able to cancel, pause, and resume operations allows us to create more responsive and efficient applications. In this article, we explored different approaches to canceling asynchronous operations, such as using promises and event emitters. We also looked at how to pause and resume operations using generators, promises, and async/await. By mastering these concepts, you can take your JavaScript skills to the next level and build robust and user-friendly applications."
+  },
+  
+  {
+    "title": "🎃 Holy Grail Flexbox Layout",
+    "url": "/posts/Holy-Grail-Flexbox-Layout/",
+    "categories": "STYLE, CSS",
+    "tags": "css",
+    "date": "2022-10-23 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "The Holy Grail Layout is a well-known CSS issue that has had a number of remedies throughout time. If you’re not aware of the background of the Holy Grail layout, this A List Apart article provides...",
+    "content": "The Holy Grail Layout is a well-known CSS issue that has had a number of remedies throughout time. If you’re not aware of the background of the Holy Grail layout, this A List Apart article provides a decent overview and links to some of the most well-known alternatives.Exactly like in the image above, a page with a header, footer, and three columns makes up the Holy Grail Layout’s basic structure. The left and right columns have supplementary material, such as navigation or adverts, while the center column is home to the primary text.Unfortunately, none of the traditional remedies to this issue have ever been able to completely achieve all of these aims due to the nature of these objectives and the original CSS constraints.Finally, a comprehensive solution is feasible with Flexbox.HTML Code:CSS Code:You can access the code from here"
+  },
+  
+  {
+    "title": "🌟 CSS Shadow Animation",
+    "url": "/posts/CSS-Shadow-Animation/",
+    "categories": "STYLE, CSS",
+    "tags": "css",
+    "date": "2022-10-23 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "You can access the code from here",
+    "content": "You can access the code from here"
+  },
+  
+  {
+    "title": "🎯 Nested Dynamic Routes in React Router v6",
+    "url": "/posts/Nested-Dynamic-Routes-in-React-Router-v6/",
+    "categories": "Develop, React",
+    "tags": "react",
+    "date": "2022-10-21 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "When I first started to develop my portfolio, I fetched GitHub Repos and ran into the issue of needing to present the repo data when clicking on the repo name precisely as seen in the image below.I...",
+    "content": "When I first started to develop my portfolio, I fetched GitHub Repos and ran into the issue of needing to present the repo data when clicking on the repo name precisely as seen in the image below.If you look closely, you’ll see that the URL is dynamically altered to reflect the chosen repository’s name and the proper repo data is rendered. The term “dynamic routing” refers to this behavior.I came up with this Sandbox demo example to help you better understand this type of behavior."
+  },
+  
+  {
+    "title": "📚 Sass: More about Nesting",
+    "url": "/posts/Sass-More-about-Nesting/",
+    "categories": "STYLE, SASS",
+    "tags": "sass",
+    "date": "2022-10-09 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "We learnt how to nest Scss rules in the last post. Today, we’ll go into more depth regarding nesting.In this post, we will cover:-  Parent Selector and pseudo-classes  Grouping and Nesting CSS Sele...",
+    "content": "We learnt how to nest Scss rules in the last post. Today, we’ll go into more depth regarding nesting.In this post, we will cover:-  Parent Selector and pseudo-classes  Grouping and Nesting CSS Selectors  Selector Nest CombinatorsEach point will be discussed in depth.1. Parent Selector and pseudo-classesOfficial SASS document states that  The parent selector, &amp; , is a special selector invented by Sass that’s used in nested selectors to refer to the outer selectorTo further understand, consider the example below.&amp; here works as a reference to the outer selector which is .main .alertIt may be puzzling to you how such a selector may be helpful, right? Parent selector is most commonly used in:1.1 _Suffix classes context.Many frameworks, including Bootstrap, have this pattern.1.2 Pseudo classes also utilize a parent selector.1.3 also &amp; can be used as an argument inside pseudo-selectors functions:2. Grouping and Nesting CSS SelectorsWe use a comma as a separator when there are many selectors in a list.3. Selector Nest Combinators (&gt;, +, ~, space)selector combinators can be placed in many places as shown below:Need to read more about selector-nest-combinators? selector-nest-combinatorsI almost covered everything I know about SCSS nesting; nevertheless, in the following post, we’ll talk about a new subject called placeholder selector."
+  },
+  
+  {
+    "title": "📎 Sass: Placeholder Selector",
+    "url": "/posts/Sass-Placeholder-Selector/",
+    "categories": "STYLE, SASS",
+    "tags": "sass",
+    "date": "2022-10-09 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "Our series is split into two main categories: SASS rules and SASS at-rules, if you recall the course mindmap from the sass syntax post. The one SASS rule we didn’t cover in the previous posts was P...",
+    "content": "Our series is split into two main categories: SASS rules and SASS at-rules, if you recall the course mindmap from the sass syntax post. The one SASS rule we didn’t cover in the previous posts was Placeholder Selector, so now we’re going to talk about it.Placeholder SelectorA sass placeholder is a special sass selector that begins with a % and it is used to hold CSS styles blocks like this one in the example below:Although it is comparable to a class selector, it is not converted into CSS code.How then may this selection be of use?A placeholder may be seen as a box that contains a block of CSS styles that can be applied in many ways without repeating, thanks to the sass at-rule “@extend.”Finally, we can say that the posts that will come after this one will introduce SCSS at-rules.See You 😉"
+  },
+  
+  {
+    "title": "🎯 3-minute Gitflow branching model",
+    "url": "/posts/3-minute-Gitflow-branching-model/",
+    "categories": "Version Control System, Github",
+    "tags": "github",
+    "date": "2022-07-29 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "Git Workflow is a recipe or recommendation for how to use Git to accomplish work consistently and productively.The topmost workflows present nowadays are:  Git flow  GitHub flow  GitLab flowToday, ...",
+    "content": "Git Workflow is a recipe or recommendation for how to use Git to accomplish work consistently and productively.The topmost workflows present nowadays are:  Git flow  GitHub flow  GitLab flowToday, we’re gonna talk about “Git flow” the most popular and widely used one.Table of content:  What is Gitflow?  Gitflow diagram branches.  How does Gitflow works?  Conclusion  References  What is Gitflow?It is a successful git branching model that depends on isolating your work into different types of branches. it was introduced in June 2010 by Vincent Driessen, and it’s become the most popular workflow as it achieved the maximum benefit from using git.  Gitflow branching diagramthe image above shows the branching model of a repo created with Git flow workflow; we can notice that the repo consists of 2 kinds of branches :1. Permanent branches:Are branches created at the start of any project, they are always existing branches. (like; master and develop branches)2. Temporary branches:are branches created from the permanent one and it’s used to perform specific development tasks, then we can delete them (like; hotfixes, release, and features branches).3. How does Gitflow work?As mentioned before, in git-flow workflow there are 5 different branches:  Main  Develop  Feature  Release  Hotfixes3.1 Main branchPlease note: the main branch is commonly referred to as “master”; we have made an intentional decision to avoid that outdated term and have chosen to use “main” instead.After initializing a new repo, the main branch is created as a default branch, it will hold only the production-ready code that can be released. It is considered a red line which means we shouldn’t push directly into it.3.2 Develop branchAs the main branch is a red line, we create another branch called develop branch. It is considered the single source of truth used to hold pre-production code.inside this branch, we integrate and test new features and most bug fixes before they are merged into the main branch.now our repo has both main and develops permanent branches; now let’s say we need to add a new feature to our code, so we create a feature branch to add it.3.3 Feature branchIs a branch created from the develop branch in which, we add our new feature code then pull a request to develop branch and ask to merge? after merging is done successfully we don’t need this branch anymore so we delete it.      Don’t add more than one feature inside the same branch [remember: one branch for one feature]        Don’t make another branch from the feature branch  3.4 Release branchAssume that we add all necessary features and our project now is ready to release to the public, in that time release branch comes into the picture. this branch is created for testing purposes like deployment in the server.During this time if we discovered any bugs we solve them directly in the same branch then merge the changes back to develop branch then push finally it to the main as a live code.3.5 hotfixesif any bugs appear after publishing we can fix them quickly by creating a hotfixes branch from the main then merge the changes with develop branch and push it back to the main one.  ConclusionIn this pattern, we can notice that both main and develop branches are identical, that is to make sure bugs which fixed in the main branch don’t back again.  List of References      https://www.youtube.com/watch?v=7OTrHx56GfE&amp;feature=youtu.be        https://www.gitkraken.com/learn/git/git-flow        https://axom.readthedocs.io/en/develop/docs/sphinx/dev_guide/gitflow_branching.html  "
+  },
+  
+  {
+    "title": "🎁 Sass: Interpolation & Nesting",
+    "url": "/posts/Sass-Interpolation-&-Nesting/",
+    "categories": "STYLE, SASS",
+    "tags": "sass",
+    "date": "2022-07-24 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "In the prior post, we discussed the SSCS rules. We began with variables and demonstrated how they cannot be used as placeholders for property names, stating that interpolation was used in their pla...",
+    "content": "In the prior post, we discussed the SSCS rules. We began with variables and demonstrated how they cannot be used as placeholders for property names, stating that interpolation was used in their place, so let’s expand on the topic of interpolation.Interpolationsass docs said that  Interpolation can be used almost anywhere in a Sass stylesheet to embed the result of a SassScript expression into a chunk of CSS.It allows us to insert sass expressions into a simple SASS or CSS code by using #{expression}.Interpolation Syntax:#{expression}Example:Keep in mind that we may use interpolation as a placeholder for both property names and values.It can also be utilized as a placeholder for selectors.Example: Nesting ruleCSS selectors may be nested in Sass just as in HTML.Take a look at this Sass navigation code example:Notice that in Sass, the ul, li, and selectors are nested inside the nav selector.While in CSS, the rules are defined one by one (not nested):You can see that sass is more readable and cleaner than traditional CSS since it allows the nesting of properties.Sass Nested PropertiesNumerous CSS properties, such as text-align, text-transform, and text-overflow, all begin with the same prefix.Sass allows you to write them as nested properties:For now, that is all there is. We will discuss nesting in further detail in the following post.See You 🧡"
+  },
+  
+  {
+    "title": "👀 SASS Syntax",
+    "url": "/posts/SASS-Syntax/",
+    "categories": "STYLE, SASS",
+    "tags": "sass",
+    "date": "2022-07-20 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "In the previous post, we learned how to compile SCSS to CSS. Now we will learn how to write SCSS.You should first know that you can write SASS stylesheets with two syntaxes.  SCSS Syntax  SASS Synt...",
+    "content": "In the previous post, we learned how to compile SCSS to CSS. Now we will learn how to write SCSS.You should first know that you can write SASS stylesheets with two syntaxes.  SCSS Syntax  SASS SyntaxDo they differ? Yes, and the table below highlights their variants.To make things more clear, check out this example, which is written twice—once with SCSS syntax and once with sass syntax.When writing SASS or SCSS, you should adhere to these two rules: 1-Style Rules. 2-at-Style Rules.Again, you can take an overview look at these rules in the below screenshot.Fear not, we will explain each of these rules in more detail in the following sections, but for now, let’s focus on the five style principles of nesting, variables, interpolation, placeholder selectors, and selector combinators.1. VariablesSimple Sass variables allow you to use the name rather than the actual value by assigning a value to a name that starts with the letter $.$variableName : value;  variableName: any name that doesn’t start with a number or a special character like @.  value: any value (lists, strings, numbers, booleans, null, colors)Example:// We assign a variable$colorOfHeading: #616165;// then use ith3 {color: $colorOfHeading}Keep in mind that the variables:  Can only be used as a property value and will throw an error if used as a property name.  Is not available outside of its scope.Example:$propertyName: 'font-size';$propertyValue: 30px;h3{    $propertyName: $propertyValue; // not Valid     font-size: $propertyValue; // Valid}Example:$myColor: red; // in global scopeh1{$myColor: green; // in local scopecolor: $myColor; // green}p{color: $myColor; // red}The !global flag can be used to make local variables global.Example:$myColor: red;h1{$myColor: green !global;color: $myColor; // green}p{color: $myColor; // green}Note: A hyphen and an underscore are equivalent in Sass. $font-size is the same as $font_sizeExample:$font-size: 20px;h2{font-size: $font_size; // 20px}Tip: to fully control the sizes and widths of your styles, use variables in conjunction with expressions.Example:$full-width: 100%.col-1 {float: left; width: $full-width / 1}.col-2 {float: left; width: $full-width / 2}.col-3 {float: left; width: $full-width / 3}Example:$baseFont: 10px;$paragraphFontSize: 7px;h3{font-size: $baseFont + $paragraphFontSize}Because variables cannot be used as a property name, interpolation comes into the picture. In the following articles, interpolation will be covered in more detail."
+  },
+  
+  {
+    "title": "🤔 How to add SASS to your project ?",
+    "url": "/posts/How-to-add-SASS-to-your-project/",
+    "categories": "STYLE, SASS",
+    "tags": "sass",
+    "date": "2022-07-14 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "I added the course road map.The previous post explained what SASS is and why it’s preferable to use it rather than CSS. Right now, we are about to learn how to include it in our project.Browsers wo...",
+    "content": "I added the course road map.The previous post explained what SASS is and why it’s preferable to use it rather than CSS. Right now, we are about to learn how to include it in our project.Browsers won’t understand sass files since, as we all know, they only understand HTML, CSS, and JS. Therefore, in order to make it simple for browsers to grasp, we need to compile Sass scripts into CSS files.In the next few lines, we will discuss 3 methods to compile Sass to Css#1. Command LineOne of the simplest ways to compile Sass into CSS is by using the sass package.sass can be installed on Windows, Mac OS X, Linux, and Unix operating systems. It can also be installed through the Node Package Manager (NPM). The installation process for both methods is quite simple.To install sass using NPM, we need to install node.js first on our machine, then open the node terminal and follow these steps:1-Run node --version to confirm that the node has been set up properly.node --version&gt; Expected: v16.16.0 or any other version2-Install sassnpm install -g sassThis will download the package from npm’s repository and install it globally on your system.3-Watching sass filesass -w style.sass style.cssThis will automatically compile style.sass file to style.css fileCongratulate 🎉 you have setup sass successfully.Now, if you copy &amp; paste this Scss code in your local Scss file$socails : facebook twitter youtube;@each $item in $socails {    .#{$item}-img{        background: url('../images/image-#{$item}.png');    }}it will be compiled to.facebook-img {  background: url(\"../images/image-facebook.png\");}.twitter-img {  background: url(\"../images/image-twitter.png\");}.youtube-img {  background: url(\"../images/image-youtube.png\");}#2 VS Code Extensionslive-sass is one of the most efficient VS code extensions that is used in sass compilation.#3 Online CompilersThere are some online tools, such as sassMeister that compile Sass without any installs.Now, it’s time to go deeper with sass. In the next article, we will learn more about sass syntax."
+  },
+  
+  {
+    "title": "🎨Sass: the style you want, the code you need",
+    "url": "/posts/Sass-the-style-you-want,-the-code-you-need/",
+    "categories": "STYLE, SASS",
+    "tags": "sass",
+    "date": "2022-07-13 00:00:00 +0000",
+    
+
+
+
+
+
+    
+    "snippet": "  I added the course road map.If you are a developer or web designer, chances are you have heard about Sass at one time or another. Sass is just as easy to use as CSS but includes some additional f...",
+    "content": "  I added the course road map.If you are a developer or web designer, chances are you have heard about Sass at one time or another. Sass is just as easy to use as CSS but includes some additional features that make it even more powerful.It’s time to start the Sass series. In this first article of the series, we will learn what Sass is and why you need to use it for more efficient web development.Sass is an extension of the CSS language that adds power and flexibility without getting too complicated. It provides variables, mixins, inheritance, and other handy tools for making CSS more maintainable. Sass also helps with more advanced features like code organization (partials), data-driven styles (looks), and responsive design.In this series, we’ll be going over the basics of SASS/SCSS. We’ll be covering a lot of ground, from basic syntax to more advanced features. So, if you’re new to SASS/SCSS or want to brush up on some old skills, this is the series for you.So let us start with this questionShould you be using Sass or CSS? 🤔That’s a question often asked, and one we can answer with a simple “Yes”. It all comes down to stylesheets vs preprocessors — and it’s important to get things right. SASS (and its more powerful cousin, SCSS) are writing systems that let you write faster, more flexible, and more maintainable code by way of variables, mixins, and nesting.SASS was designed by Hampton Catlin and Chris Eppstein.The main goal of SASS is to make it easier for developers to maintain their stylesheets and also to help them avoid some common coding problems.This code, for instance, creates a set of classes twice: once using CSS and once with SCSS.Write less and do more with Sass.That’s all about this post for today, in the next article, we will learn how to use sass in your project.See You ❤Please feel free to reach out to me at Linkedin if you have any questions."
+  }
+  
+]
+
