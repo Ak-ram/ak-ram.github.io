@@ -62,10 +62,10 @@ mermaid: true
 
 <div class="code-pens">
     <div class="code-pen">
-        <div class="code-pen-header">Data Caching With JS</div>
-        <a href="https://codepen.io/Akr-am/pen/WNLRoYY?editors=1010">
-            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/fa88bacc-a220-44ce-9d56-35eeb41170fd" alt="Data Caching With JS">
+        <a class="code-pen-header" href="https://codepen.io/Akr-am/pen/WNLRoYY?editors=1010">
+        Data Caching With JS
         </a>
+            <img src="https://github.com/Ak-ram/Ak-ram/assets/69124951/fa88bacc-a220-44ce-9d56-35eeb41170fd" alt="Data Caching With JS">
     </div>
     <div class="code-pen">
         <div class="code-pen-header">QR-Code Generator</div>
