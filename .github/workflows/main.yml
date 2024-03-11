@@ -1,22 +1,27 @@
-name: Auto Commit
-
+name: Send WhatsApp Message
 on:
   push:
     branches:
-      - main  # Replace with the branch you want to trigger the workflow on
+      - main
 
 jobs:
-  build:
+  send_message:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          
+      - name: Install dependencies
+        run: npm install twilio
 
-      - name: Commit and push changes
+      - name: Send WhatsApp message
+        env:
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_PHONE_NUMBER: ${{ secrets.TWILIO_PHONE_NUMBER }}
+          TO_PHONE_NUMBER: "whatsapp:+1234567890" # Replace with the recipient's phone number
+          MESSAGE_BODY: "Hello from GitHub Actions!"
         run: |
-          git config --global user.name ak-ram
-          git config --global user.email ashrfakrm64@gmail.com
-          git add .
-          git commit -m "Automated commit"
-          git push
+          node -e "const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN); client.messages.create({from: process.env.TWILIO_PHONE_NUMBER, to: process.env.TO_PHONE_NUMBER, body: process.env.MESSAGE_BODY}).then(message => console.log(message.sid));"
