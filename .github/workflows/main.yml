@@ -1,27 +1,22 @@
-name: Generate and Push Commits
+name: Auto Commit
 
 on:
   push:
     branches:
-      - main
+      - main  # Replace with the branch you want to trigger the workflow on
 
 jobs:
-  generate-and-push-commits:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Generate Commits
-      run: |
-        # Run your script to generate commits
-        ./generate_commits.sh
-
-    - name: Commit and Push Changes
-      run: |
-        git config --global user.name "Your Name"
-        git config --global user.email "your.email@example.com"
-        git add .
-        git commit -m "Generated commits"
-        git push
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Your Name"
+          git config --global user.email "your-email@example.com"
+          git add .
+          git commit -m "Automated commit"
+          git push
