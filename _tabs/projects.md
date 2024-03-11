@@ -31,7 +31,6 @@ mermaid: true
 > ### 2.2. ReactJS Repos
 
 [![github-Moviideck-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=Moviideck&theme=react&bg_color=1F222E&title_color=00ccee&hide_border=true&icon_color=00ccee&show_icons=false)](https://github.com/Ak-ram/Moviideck)
-[![github-quran-player-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=quran-player&theme=react&bg_color=1F222E&title_color=00ccee&hide_border=true&icon_color=00ccee&show_icons=false)](https://github.com/Ak-ram/quran-player)
 [![github-todoist-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=todoist&theme=react&bg_color=1F222E&title_color=00ccee&hide_border=true&icon_color=00ccee&show_icons=false)](https://github.com/Ak-ram/todoist)
 [![github-flexbox-playground-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=flexbox-playground&theme=react&bg_color=1F222E&title_color=00ccee&hide_border=true&icon_color=00ccee&show_icons=false)](https://github.com/Ak-ram/flexbox-playground)
 
@@ -39,8 +38,6 @@ mermaid: true
 
 [![github-Portfolio-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=ak-ram.github.io&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=false&border_color=F8D866&icon_color=F8D866&show_icons=true)](https://github.com/Ak-ram/ak-ram.github.io)
 [![github-excel-processor-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=excel-processor&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&border_color=F8D866&icon_color=F8D866&show_icons=true)](https://github.com/Ak-ram/excel-processor)
-[![github-social-media-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=social-media&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/social-media)
-[![github-bookbia-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=bookbia&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/bookbia)
 [![github-Ctyptex-repo](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Ak-ram&repo=Ctyptex&theme=react&bg_color=1F222E&title_color=F8D866&hide_border=true&icon_color=F8D866&show_icons=false)](https://github.com/Ak-ram/Ctyptex)
 
 ## 3. TOP PROJECTS I'VE CONTRIBUTE TO 📕
