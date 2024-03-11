@@ -1,35 +1,22 @@
-name: Generate Documentation
+name: Auto Generate Commits
 
 on:
-  push:
-    paths:
-      - '**.md' # Trigger workflow on changes to markdown files
-      - '**.yml' # Include YAML files if needed
+  schedule:
+    - cron: '0 0 * * *' # Run the workflow daily at midnight
 
 jobs:
-  build:
+  generate-commits:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-    
-      - name: Set Up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3' # Use 3.3 or another available version
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      - name: Install Dependencies
-        run: |
-          gem install bundler
-          bundle install
-
-      - name: Build Documentation
-        run: |
-          bundle exec jekyll build --destination docs
-
-      - name: Deploy Documentation
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+    - name: Generate Commits
+      run: |
+        # Write your script or commands here to generate commits
+        # For example:
+        echo "New commit content" > new_file.txt
+        git add new_file.txt
+        git commit -m "Auto-generated commit"
+        git push
