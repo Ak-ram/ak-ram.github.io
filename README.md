@@ -35,6 +35,7 @@ You can customize the blog by editing files:
 
 The blog can be deployed to GitHub Pages or any static host. Just run `jekyll build` and upload the contents of `_site/` folder.
 
+
 ## License
 
 The content of this blog is licensed under [CC BY-NC-SA 4.0](LICENSE). The Chirpy theme by [Anthropic](https://www.anthropic.com) is licensed under [MIT](https://github.com/cotes2020/chirpy-theme/blob/master/LICENSE).
