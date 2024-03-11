@@ -43,6 +43,5 @@ Confident in making a significant contribution to a team 🎯 and eager to learn
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ak-ram/)
 [![Leetcode](https://img.shields.io/badge/-LeetCode-FFA116?logo=LeetCode&logoColor=black)](https://www.leetcode.com/Ak-ram)
 [![Blog](https://img.shields.io/badge/dev.to-0A0A0A?logo=devdotto&logoColor=white)](https://dev.to/akram_ak)
-[![Stackover flow](https://aleen42.github.io/badges/src/stackoverflow.svg)](https://stackoverflow.com/users/14151211/akram-ashraf)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:ashrfakrm64@gmail.com)
 [![Whats' app](https://img.shields.io/badge/WhatsApp-25D366?logo=whatsapp&logoColor=white)](https://wa.me/00201158541832?text=Hi Akram 👋, I'm Interest to work with you)
