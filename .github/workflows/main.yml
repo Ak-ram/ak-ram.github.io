@@ -21,7 +21,7 @@ jobs:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           TWILIO_PHONE_NUMBER: ${{ secrets.TWILIO_PHONE_NUMBER }}
-          TO_PHONE_NUMBER: "whatsapp:+1234567890" # Replace with the recipient's phone number
+          TO_PHONE_NUMBER: "whatsapp:+201158541832" # Replace with the recipient's phone number
           MESSAGE_BODY: "Hello from GitHub Actions!"
         run: |
           node -e "const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN); client.messages.create({from: process.env.TWILIO_PHONE_NUMBER, to: process.env.TO_PHONE_NUMBER, body: process.env.MESSAGE_BODY}).then(message => console.log(message.sid));"
