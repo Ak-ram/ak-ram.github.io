@@ -1,11 +1,12 @@
-name: Auto Generate Commits
+name: Generate and Push Commits
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Run the workflow daily at midnight
+  push:
+    branches:
+      - main
 
 jobs:
-  generate-commits:
+  generate-and-push-commits:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,9 +15,13 @@ jobs:
 
     - name: Generate Commits
       run: |
-        # Write your script or commands here to generate commits
-        # For example:
-        echo "New commit content" > new_file.txt
-        git add new_file.txt
-        git commit -m "Auto-generated commit"
+        # Run your script to generate commits
+        ./generate_commits.sh
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "Your Name"
+        git config --global user.email "your.email@example.com"
+        git add .
+        git commit -m "Generated commits"
         git push
