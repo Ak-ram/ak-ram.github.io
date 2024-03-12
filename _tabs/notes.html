@@ -177,6 +177,7 @@ order: 9
 </html> -->
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -192,6 +193,13 @@ order: 9
     <button onclick="viewPDF('html')">HTML</button>
     <button onclick="viewPDF('ts')">TypeScript</button>
     <button onclick="toggleList('js')">JavaScript</button>
+    <div id="js-subcategories" style="display: none;">
+      <button onclick="viewPDF('js', 'Behind the scene')">Behind the Scene</button>
+      <button onclick="viewPDF('js', 'Generators')">Generators</button>
+      <button onclick="viewPDF('js', 'Arrow Function')">Arrow Function</button>
+      <button onclick="viewPDF('js', 'Iterability')">Iterability</button>
+      <button onclick="viewPDF('js', 'Modularity')">Modularity</button>
+    </div>
     <button onclick="viewPDF('data structures')">Data Structures</button>
   </div>
 
@@ -249,10 +257,15 @@ order: 9
     }
 
     function toggleList(category) {
-      var subcategories = document.querySelectorAll('#file-system button[data-category="' + category + '"]');
-      subcategories.forEach(function(subcategory) {
-        subcategory.classList.toggle('hidden');
-      });
+      var subcategories = document.getElementById('js-subcategories');
+      var button = document.querySelector('#file-system button[data-category="' + category + '"]');
+      if (subcategories.style.display === 'none') {
+        subcategories.style.display = 'block';
+        button.innerHTML = 'JavaScript &#9650;';
+      } else {
+        subcategories.style.display = 'none';
+        button.innerHTML = 'JavaScript &#9660;';
+      }
     }
   </script>
 </body>
